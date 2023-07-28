@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React from "react";
 import styled from "styled-components";
 import { Link as RouterLink } from 'react-router-dom';
 
@@ -34,17 +34,17 @@ const NavLink = styled(RouterLink)`
 `;
 
 const Navbar = () => {
-  const [BackBtn, setBackBtn] = useState(false)
+  // const [BackBtn, setBackBtn] = useState(false)
 
   return (
     <NavContainer>
       <NavItems>
-        {BackBtn 
+        {/* {BackBtn 
            && (
           <NavBackItem  onClick={()=>setBackBtn(false)}>
             <NavLink to="/">Back</NavLink>
           </NavBackItem>
-        )}
+        )} */}
         <NavItem onClick={()=>setBackBtn(false)}>
           <NavLink to="/">Home</NavLink>
         </NavItem>
