@@ -63,7 +63,7 @@ const NewPostForm = () => {
       if(response?.data){
         console.log('New post created:', response.data);
       alert('New post created successfully!');
-      history.goBack();
+      history.push('/');
       }
       
     } catch (error) {
