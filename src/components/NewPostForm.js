@@ -93,6 +93,7 @@ const NewPostForm = () => {
           value={description}
           onChange={(e) => setDescription(e.target.value)}
           maxLength={1000}
+          required
         />
       </FormGroup>
       <SubmitButton type="submit" disabled={isLoading}>
