@@ -1,24 +1,3 @@
-// const initialState = {
-//     posts: [],
-//     currentPage: 1,
-//     totalPages: 1,
-//   };
-  
-//   const postsReducer = (state = initialState, action) => {
-//     switch (action.type) {
-//       case 'FETCH_POSTS_SUCCESS':
-//         return {
-//           ...state,
-//           posts: action.payload.posts,
-//           currentPage: action.payload.currentPage,
-//           totalPages: action.payload.totalPages,
-//         };
-//       default:
-//         return state;
-//     }
-//   };
-  
-//   export default postsReducer;
 import * as actionTypes from '../actions/actionTypes';
 
 const initialState = {

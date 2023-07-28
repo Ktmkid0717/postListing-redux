@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import styled from "styled-components";
 import { Link as RouterLink } from 'react-router-dom';
 
@@ -34,19 +34,21 @@ const NavLink = styled(RouterLink)`
 `;
 
 const Navbar = () => {
+  const [BackBtn, setBackBtn] = useState(false)
+
   return (
     <NavContainer>
       <NavItems>
-        {(window.location.href.includes("/posts/new") ||
-          window.location.href.includes("/posts")) && (
-          <NavBackItem>
+        {BackBtn 
+           && (
+          <NavBackItem  onClick={()=>setBackBtn(false)}>
             <NavLink to="/">Back</NavLink>
           </NavBackItem>
         )}
-        <NavItem>
+        <NavItem onClick={()=>setBackBtn(false)}>
           <NavLink to="/">Home</NavLink>
         </NavItem>
-        <NavItem>
+        <NavItem onClick={()=>setBackBtn(true)}>
           <NavLink to="/posts/new">New Post</NavLink>
         </NavItem>
       </NavItems>

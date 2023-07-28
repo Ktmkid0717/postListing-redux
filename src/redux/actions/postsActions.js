@@ -1,25 +1,3 @@
-// import axios from 'axios';
-
-// const API_URL = 'https://jsonplaceholder.typicode.com/posts';
-// const POSTS_PER_PAGE = 10;
-
-// export const fetchPosts = (page) => async (dispatch) => {
-//   try {
-//     const response = await axios.get(`${API_URL}?_start=${(page - 1) * POSTS_PER_PAGE}&_limit=${POSTS_PER_PAGE}`);
-//     const totalPosts = await axios.get(API_URL);
-
-//     dispatch({
-//       type: 'FETCH_POSTS_SUCCESS',
-//       payload: {
-//         posts: response.data,
-//         currentPage: page,
-//         totalPages: Math.ceil(totalPosts.data.length / POSTS_PER_PAGE),
-//       },
-//     });
-//   } catch (error) {
-//     // Handle errors
-//   }
-// };
 import axios from 'axios';
 import * as actionTypes from './actionTypes';
 
