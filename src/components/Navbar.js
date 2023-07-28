@@ -16,10 +16,10 @@ const NavItems = styled.ul`
   padding: 0;
   gap: 50px;
 `;
-const NavBackItem = styled.div`
-  position: absolute;
-  left: 20px;
-`;
+// const NavBackItem = styled.div`
+//   position: absolute;
+//   left: 20px;
+// `;
 
 const NavItem = styled.li`
   margin: 0 0.5rem;
