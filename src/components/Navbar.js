@@ -45,10 +45,10 @@ const Navbar = () => {
             <NavLink to="/">Back</NavLink>
           </NavBackItem>
         )} */}
-        <NavItem onClick={()=>setBackBtn(false)}>
+        <NavItem >
           <NavLink to="/">Home</NavLink>
         </NavItem>
-        <NavItem onClick={()=>setBackBtn(true)}>
+        <NavItem>
           <NavLink to="/posts/new">New Post</NavLink>
         </NavItem>
       </NavItems>
