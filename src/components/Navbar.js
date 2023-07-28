@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link as RouterLink } from 'react-router-dom';
 
 const NavContainer = styled.nav`
   background-color: #333;
@@ -24,7 +25,7 @@ const NavItem = styled.li`
   margin: 0 0.5rem;
 `;
 
-const NavLink = styled.a`
+const NavLink = styled(RouterLink)`
   color: #fff;
   text-decoration: none;
   &:hover {
@@ -39,14 +40,14 @@ const Navbar = () => {
         {(window.location.href.includes("/posts/new") ||
           window.location.href.includes("/posts")) && (
           <NavBackItem>
-            <NavLink href="/">Back</NavLink>
+            <NavLink to="/">Back</NavLink>
           </NavBackItem>
         )}
         <NavItem>
-          <NavLink href="/">Home</NavLink>
+          <NavLink to="/">Home</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="/posts/new">New Post</NavLink>
+          <NavLink to="/posts/new">New Post</NavLink>
         </NavItem>
       </NavItems>
     </NavContainer>
